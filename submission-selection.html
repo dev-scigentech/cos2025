@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ePOstersLive - Choose Submission Type</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e8f0f5;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .banner-container {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #e8f0f5;
+        }
+
+        .banner-image {
+            width: 728px;
+            height: 90px;
+            max-width: 100%;
+            object-fit: contain;
+            display: inline-block;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+
+        .conference-title {
+            font-size: 18px;
+            font-weight: normal;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .meeting-dates {
+            font-size: 16px;
+            font-weight: normal;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .main-content {
+            background: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .main-title {
+            font-size: 24px;
+            font-weight: normal;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 60px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .options-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+
+        .option-button {
+            background-color: #f0f4f7;
+            border: 1px solid #d0d8e0;
+            border-radius: 8px;
+            padding: 40px 60px;
+            width: 280px;
+            cursor: pointer;
+            text-decoration: none;
+            color: #4A90E2;
+            font-size: 16px;
+            font-weight: normal;
+            transition: background-color 0.2s ease;
+            display: block;
+        }
+
+        .option-button:hover {
+            background-color: #e8f0f5;
+        }
+
+        .option-title {
+            font-size: 16px;
+            color: #4A90E2;
+            margin-bottom: 15px;
+        }
+
+        .option-description {
+            font-size: 13px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .help-section {
+            margin-top: 40px;
+        }
+
+        .help-link {
+            color: #4A90E2;
+            text-decoration: none;
+            font-size: 13px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .help-link:hover {
+            text-decoration: underline;
+        }
+
+        .info-icon {
+            width: 16px;
+            height: 16px;
+            background: #4A90E2;
+            border-radius: 50%;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .footer {
+            margin-top: 80px;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .banner-image {
+                width: 100%;
+                max-width: 728px;
+                height: auto;
+            }
+            
+            .options-container {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+            
+            .option-button {
+                width: 100%;
+                max-width: 300px;
+                padding: 30px 40px;
+            }
+            
+            .main-content {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-container">
+        <img src="https://scigen-archives-2.s3-eu-west-1.amazonaws.com/test.jpeg" 
+             alt="The Clinical Orthopaedic Society 113th Annual Meeting Banner" 
+             class="banner-image">
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="conference-title">The Clinical Orthopaedic Society 113th Annual Meeting</div>
+            <div class="meeting-dates">September 3-6, 2025</div>
+        </header>
+
+        <main class="main-content">
+            <h1 class="main-title">Choose Your Submission Type</h1>
+            
+            <p class="subtitle">
+                Please select how you would like to submit your electronic poster. Choose one of the options below to continue with your submission.
+            </p>
+
+            <div class="options-container">
+                <a href="https://epostersubmission.com/cos2025" class="option-button">
+                    <div class="option-title">Submit PDF Only</div>
+                    <div class="option-description">
+                        Upload your poster as a PDF document
+                    </div>
+                </a>
+
+                <a href="https://epostersubmission.com/cosvideo2025" class="option-button">
+                    <div class="option-title">Submit Video Only</div>
+                    <div class="option-description">
+                        Upload a video presentation of your poster
+                    </div>
+                </a>
+            </div>
+
+            <div class="help-section">
+                <a href="#" class="help-link">
+                    <span class="info-icon">?</span>
+                    Submission Guidelines and Requirements
+                </a>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Questions or Difficulties?<br>
+            Chat with us live or email at <a href="mailto:support@eposterlive.com" style="color: #4A90E2;">support@eposterlive.com</a></p>
+        </footer>
+    </div>
+</body>
+</html>
